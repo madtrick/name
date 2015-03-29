@@ -8,6 +8,9 @@
   },
   "author": "Farruco Sanjurjo",
   "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "bluebird": "^2.9.14",
     "tp-api": "^1.0.5"
