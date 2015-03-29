@@ -18,7 +18,7 @@ module.exports = {
   },
 
   preMessageHook : function (options, data) {
-    return new Promise( function(resolve) {
+    return new Promise( function (resolve) {
       var targetProcessId            = options.cli.tp;
       var messageWithTargetProcessId = data.replace(/:tp-ticket-id:/g, targetProcessId);
 
@@ -30,7 +30,7 @@ module.exports = {
     var self    = this;
     var comment = 'Submitted Pull Request ' + pullRequest.url;
 
-    return new Promise( function() {
+    return new Promise( function () {
       if (!options.cli.tp) {
         return;
       }
